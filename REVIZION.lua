@@ -76,23 +76,21 @@ function try()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-NOTOOLCLEAN", true))()
 		elseif string.match(msg, "$blockhead") then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-BLOCKHEAD", true))()
-		elseif string.match(msg, "$blockspam") then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-BLOCKSPAM", true))()
 		elseif string.match(msg, "$explorer") then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-EXPLORER", true))()
 		elseif string.match(msg, "$funny") then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-FUNNY", true))()
+		elseif string.match(msg, "$blockspam") then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/SPAM_PARTS", true))()
+			_G.spamparts = true
+		elseif string.match(msg, "$stopBlockSpam") then
+			_G.spamparts = false
 		elseif string.match(msg, "$troller") then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/Troller_FE_For_R6.txt", true))()
 		elseif string.match(msg, "$reviz") then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/Troller_FE_For_R6.txt", true))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE_REVIZ", true))()
 		elseif string.match(msg, "$thanos-ub") then
-			if game.PlaceId ~= 81751207 then
-				warn("ERROR: Only for Ultimate Build place id #81751207")
-			else
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/sparksammy/SparksammyREVIZIONAdmin/master/FE-THANOS", true))()
-				print('TIP: Type "Snap." to thanos snap and "Undo." to undo!')
-			end
+			warn("PATCHED")
 		elseif string.match(msg, "$nnzone") then
 			if game.PlaceId ~= 155615604 then
 				warn("ERROR: Only for Prison Life place id #155615604")
